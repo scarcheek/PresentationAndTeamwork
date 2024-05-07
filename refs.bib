@@ -1,4 +1,30 @@
-@inproceedings{10.1145/3545945.3569759,
+@article{aniche2020effectiveness,
+  title     = {The effectiveness of supervised machine learning algorithms in predicting software refactoring},
+  author    = {Aniche, Mauricio and Maziero, Erick and Durelli, Rafael and Durelli, Vinicius HS},
+  journal   = {IEEE Transactions on Software Engineering},
+  volume    = {48},
+  number    = {4},
+  pages     = {1432--1450},
+  year      = {2020},
+  publisher = {IEEE}
+}
+@article{baqais2020automatic,
+  author   = {Baqais, Abdulrahman Ahmed Bobakr
+              and Alshayeb, Mohammad},
+  title    = {Automatic software refactoring: a systematic literature review},
+  journal  = {Software Quality Journal},
+  year     = {2020},
+  month    = {Jun},
+  day      = {01},
+  volume   = {28},
+  number   = {2},
+  pages    = {459-502},
+  abstract = {Refactoring a software artifact is an embedded task in the maintenance phase of the software life cycle. To reduce the time and effort required for this task, researchers proposed methods to automate the software refactoring process at the design and code levels. In this paper, we conducted a systematic literature review of papers that suggest, propose, or implement an automated refactoring process. Using different phases, setting several quality measures, and snowballing, only 41 papers passed to the last stage to be analyzed and reviewed. We observe an increase in the number of papers that propose automatic refactoring. The results show that while most of the papers discuss code refactoring, only a few recent papers are focused on model refactoring. Search-based refactoring is gaining more popularity, and several researchers have used it to perform refactoring in a quick and efficient manner.},
+  issn     = {1573-1367},
+  doi      = {10.1007/s11219-019-09477-y},
+  url      = {https://doi.org/10.1007/s11219-019-09477-y}
+}
+@inproceedings{becker2023programming,
   author    = {Becker, Brett A. and Denny, Paul and Finnie-Ansley, James and Luxton-Reilly, Andrew and Prather, James and Santos, Eddie Antonio},
   title     = {Programming Is Hard - Or at Least It Used to Be: Educational Opportunities and Challenges of AI Code Generation},
   year      = {2023},
@@ -15,23 +41,18 @@
   location  = {<conf-loc>, <city>Toronto ON</city>, <country>Canada</country>, </conf-loc>},
   series    = {SIGCSE 2023}
 }
-@article{Baqais2020,
-  author   = {Baqais, Abdulrahman Ahmed Bobakr
-              and Alshayeb, Mohammad},
-  title    = {Automatic software refactoring: a systematic literature review},
-  journal  = {Software Quality Journal},
-  year     = {2020},
-  month    = {Jun},
-  day      = {01},
-  volume   = {28},
-  number   = {2},
-  pages    = {459-502},
-  abstract = {Refactoring a software artifact is an embedded task in the maintenance phase of the software life cycle. To reduce the time and effort required for this task, researchers proposed methods to automate the software refactoring process at the design and code levels. In this paper, we conducted a systematic literature review of papers that suggest, propose, or implement an automated refactoring process. Using different phases, setting several quality measures, and snowballing, only 41 papers passed to the last stage to be analyzed and reviewed. We observe an increase in the number of papers that propose automatic refactoring. The results show that while most of the papers discuss code refactoring, only a few recent papers are focused on model refactoring. Search-based refactoring is gaining more popularity, and several researchers have used it to perform refactoring in a quick and efficient manner.},
-  issn     = {1573-1367},
-  doi      = {10.1007/s11219-019-09477-y},
-  url      = {https://doi.org/10.1007/s11219-019-09477-y}
+
+
+@article{chinthapatla2024unleashing,
+  title   = {Unleashing the Future: A Deep Dive into AI-Enhanced Productivity for Developers},
+  author  = {Chinthapatla, Saikrishna},
+  journal = {Journal Homepage: http://www.ijmra.us},
+  volume  = {13},
+  number  = {03},
+  year    = {2024}
 }
-@article{DEPALMA2024123602,
+
+@article{depalma2024exploring,
   title    = {Exploring ChatGPT's code refactoring capabilities: An empirical study},
   journal  = {Expert Systems with Applications},
   volume   = {249},
@@ -43,6 +64,7 @@
   author   = {Kayla DePalma and Izabel Miminoshvili and Chiara Henselder and Kate Moss and Eman Abdullah AlOmar},
   abstract = {ChatGPT has shown great potential in the field of software engineering with its ability to generate code. Yet, ChatGPT’s ability to interpret code has been deemed unreliable and faulty, which causes concern for the platform’s ability to properly refactor code. To confront this concern, we carried out a study to assess ChatGPT’s abilities and limitations in refactoring code. We divided the study into three parts: if ChatGPT can refactor the code, if the refactored code preserves the behavior of the original code segments, and if ChatGPT is capable of providing documentation for the refactored code to provide insights into intent, instructions, and impact. We focused our research specifically on eight quality attributes to use when prompting ChatGPT to refactor our dataset of 40 Java code segments. After collecting the refactored code segments from ChatGPT, as well as data on whether the behavior was preserved, we ran the refactored code through PMD, a source code analyzer, to find programming flaws. We also tested ChatGPT’s accuracy in generating documentation for the refactored code and analyzed the difference between the results of each quality attribute. We conclude that ChatGPT can provide many useful refactoring changes that can improve the code quality which is crucial. ChatGPT offered improved versions of the provided code segments 39 out of 40 times even if it is as simple as suggesting clearer names for variables or better formatting. ChatGPT was able to recommend numerous options ranging from minor changes such as renaming methods and variables to major changes such as modifying the data structure. ChatGPT’s strengths and accuracy were in suggesting minor changes because it had difficulty addressing and understanding complex errors and operations. Although most of the changes were minor, they made significant improvements because converting loops, simplifying calculations, and removing redundant statements have a crucial effect on runtime, memory, and readability. However, our results also indicate how ChatGPT can be unpredictable in its responses which threatens the reliability of ChatGPT. Asking ChatGPT the same prompt often yields different results, so some outputs were more accurate than others. This makes it difficult to fully access ChatGPT’s capabilities due to its variation and inconsistency. Due to ChatGPT’s limitations of its reliance on its data set, it lacks understanding of the broader context so it may occasionally make errors and suggest alternations that are neither applicable nor necessary. Overall, ChatGPT has proved to be a beneficial tool for programming as it is capable of providing advantageous suggestions, even if it is on a small scale. However, human programmers are still needed to oversee these changes and determine their significance. ChatGPT should be used as an aid to programmers since we cannot completely depend on it yet.}
 }
+
 @book{fowler2018refactoring,
   title     = {Refactoring: Improving the Design of Existing Code},
   author    = {Fowler, M.},
@@ -51,6 +73,23 @@
   url       = {https://books.google.at/books?id=2H1_DwAAQBAJ},
   year      = {2018},
   publisher = {Pearson Education}
+}
+
+@incollection{bavota2013recommending,
+  title={Recommending refactoring operations in large software systems},
+  author={Bavota, Gabriele and De Lucia, Andrea and Marcus, Andrian and Oliveto, Rocco},
+  booktitle={Recommendation Systems in Software Engineering},
+  pages={387--419},
+  year={2013},
+  publisher={Springer}
+}
+
+@inproceedings{imai2022github,
+  title     = {Is github copilot a substitute for human pair-programming? an empirical study},
+  author    = {Imai, Saki},
+  booktitle = {Proceedings of the ACM/IEEE 44th International Conference on Software Engineering: Companion Proceedings},
+  pages     = {319--321},
+  year      = {2022}
 }
 
 @article{issueInformation2023,
@@ -65,4 +104,50 @@
   issn    = {1532-0626},
   doi     = {10.1002/cpe.7073},
   url     = {https://doi.org/10.1002/cpe.7073}
+}
+@article{karakati2023software,
+  title     = {Software code refactoring based on deep neural network-based fitness function},
+  author    = {Karakati, Chitti Babu and Thirumaaran, Sethukarasi},
+  journal   = {Concurrency and Computation: Practice and Experience},
+  volume    = {35},
+  number    = {4},
+  pages     = {e7531},
+  year      = {2023},
+  publisher = {Wiley Online Library}
+}
+
+@article{kruchten2012technical,
+  title     = {Technical debt: From metaphor to theory and practice},
+  author    = {Kruchten, Philippe and Nord, Robert L and Ozkaya, Ipek},
+  journal   = {Ieee software},
+  volume    = {29},
+  number    = {6},
+  pages     = {18--21},
+  year      = {2012},
+  publisher = {IEEE}
+}
+
+@article{mariani2017systematic,
+  title     = {A systematic review on search-based refactoring},
+  author    = {Mariani, Thain{\'a} and Vergilio, Silvia Regina},
+  journal   = {Information and Software Technology},
+  volume    = {83},
+  pages     = {14--34},
+  year      = {2017},
+  publisher = {Elsevier}
+}
+@inproceedings{tang2021empirical,
+  title        = {An empirical study of refactorings and technical debt in machine learning systems},
+  author       = {Tang, Yiming and Khatchadourian, Raffi and Bagherzadeh, Mehdi and Singh, Rhia and Stewart, Ajani and Raja, Anita},
+  booktitle    = {2021 IEEE/ACM 43rd international conference on software engineering (ICSE)},
+  pages        = {238--250},
+  year         = {2021},
+  organization = {IEEE}
+}
+
+@article{yeticstiren2023evaluating,
+  title   = {Evaluating the code quality of ai-assisted code generation tools: An empirical study on github copilot, amazon codewhisperer, and chatgpt},
+  author  = {Yeti{\c{s}}tiren, Burak and {"O}zsoy, I{\c{s}}{\i}k and Ayerdem, Miray and T{"u}z{"u}n, Eray},
+  journal = {arXiv preprint arXiv:2304.10778},
+  year    = {2023}
 }
