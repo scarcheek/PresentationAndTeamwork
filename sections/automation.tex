@@ -1,0 +1,31 @@
+This section will cover the different approaches for automation based on machine learning algorithms and will take a closer look at large language models used by thousands of software developers today. This paper will look at different metrics for each model but focus on three questions as far as data exists in these fields:
+\begin{itemize}
+    \item How well can it detect refactoring opportunities? While also taking a closer look at false positives and false negatives.
+    \item How well does the model refactor a given source code? 
+    \item How well can it detect refactoring opportunities and follow through with a potential refactor? Combining the two factors to determine how well it would do in real-world software development workflows.
+\end{itemize}
+\subsection{Large Language Models}
+In the fields of ai assisted workflows, large language models (LLMs) have shifted from a niece speciality to an almost omnipotent tool which finds applications from image creation to code generation.\cite{meyer2024ai} LLMs are huge deep-learning models pre-trained on enormous amounts of data. They are especially known for their ability to be trained on datatest of specific domains but can also be used on a broad spectrum of general knowledge, making them incredibly flexible. \cite{baumgartner2024aidriven}
+\subsubsection{GPT Model}
+This section covers the experiments' results of the paper \cite[AI-Driven Refactoring: A Pipeline for Identifying and Correcting Data Clumps in Git Repositories]{baumgartner2024aidriven}.
+Being the best-known LLM, OpenAI's Generative Pre-trained Transformer series (GPT) with its versions GPT-3.5, GPT-3.5 Turbo and GPT-4.
+Temperature is a key parameter for GPT models, having a value ranging from zero to one, this parameter determines the predictability of the results. 
+A higher temperature leads to more variety in the LLM and vice versa.\\
+Taking a look at detection itself, the median sensitivity of GPT-3.5-Turbo is 0 which indicates many data clumps are undetected and many false positives. 
+Submitting all files in bulk also made the model trade off its sensitivity with the specificity parameters, with the median sensitivity reaching 50\%, but the specificity only being 14\%. 
+Apparently, the model is looking at all the information and is finding more data clumps. But also potentially leading to more false positives.
+The temperature also has a similar trade-off. Higher temperatures lead to a lower sensitivity and the other way around.\\
+If you prompt a GPT model to refactor source code while also giving it the location of the data clumps, GPT-3.5 and GPT-4's median is identical, lying at 68\%.
+These results show if you know where to look for data clumps and which places to refactor, both models can refactor the source code just as well as the other.
+GPT-3.5-Turbos arithmetic mean is less which can be explained by the existence of more overall compiler errors.
+On the same note: the median of the three instruction variants is also identical.
+Higher temperature values also resulted in a median of 0\%, indicating more non-compilable code.\\
+The final step of the experiment is combining detection and refactoring into one step. At this point, the limitations of GPT-3.5-Turbo become clear. The model scores a median score of 7\% compared to 82\% of GPT-4.
+Surprisingly, however, providing no definitions about data clumps leads to the best results, reaching a median of 46\%. 
+All other instruction types are 0\% each.
+Another experiment, held in the paper mentioned in section \ref{introduction}, \cite[The effectiveness of supervised machine learning algorithms in predicting software refactoring]{aniche2020effectiveness}, compared different machine learning models with each other, with the "Random Forest" Model performing best out of all the tested models.\\
+It appears as if machine learning models commonly perform best in a close-to-random environment.
+\subsubsection{Github co-pilot} \cite{imai2022github}
+\subsubsection{Fauxpilot Client}
+\subsection{Dedicated Models}
+\subsubsection{DNNFFz}

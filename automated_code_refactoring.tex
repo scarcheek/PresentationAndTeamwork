@@ -28,18 +28,11 @@
 
 \input{sections/abstract.tex}
 
-\section{Introduction}
+\section{Introduction}\label{introduction}
 \input{sections/introduction.tex}
 
-\section{Approaches for Automation}
-
-\subsection{Large Language Models}
-\subsubsection{GPT Model}
-\subsubsection{Github co-pilot}
-\subsubsection{Fauxpilot Client}
-
-\subsection{Dedicated Models}
-\subsubsection{DNNFFz}
+\section{Approaches for Automation}\label{automation}
+\input{sections/automation}
 
 \section{Benefits of AI-Powered Refactoring}\label{benefits}
 \subsection{Improved Code Quality}
@@ -60,7 +53,7 @@
 
 \section{Conclusion and Outlook}
 
-\nocite{*} % Makes every ref appear despite not being cited
+%\nocite{*} % Makes every ref appear despite not being cited
 \bibliographystyle{plain} % We choose the "plain" reference style
 \bibliography{refs} % Entries are in the refs.bib file
 \end{document}
