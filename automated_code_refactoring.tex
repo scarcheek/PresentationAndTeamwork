@@ -31,6 +31,10 @@
 \section{Introduction}
 \input{sections/introduction.tex}
 
+\section{Refactoring}
+\subsection{Uses of Refactoring}
+\input{sections/usesOfRefactoring.tex}
+
 \section{Approaches for Automation}
 
 \subsection{Large Language Models}
@@ -42,16 +46,14 @@
 \subsubsection{DNNFFz}
 
 \section{Benefits of AI-Powered Refactoring}\label{benefits}
-\subsection{Improved Code Quality}
-\subsection{Enhanced Maitainability}
-\subsection{Reduction of Technical Dept}
+\input{sections/automatedRefactoring.tex}
 
 \section{Challenges and Limitations}
-\subsection{Over-reliance on Automation}
-\subsection{Potential for Unintended Consequences}
-\subsection{Performance Concerns}
+\input{sections/limitations.tex}
 
 \section{Future Directions and Research Opportunites}
+\input{sections/future.tex}
+
 \subsection{Personalized Code Refactoring Suggestions}
 \section{Discussion}
 
@@ -60,7 +62,7 @@
 
 \section{Conclusion and Outlook}
 
-\nocite{*} % Makes every ref appear despite not being cited
+%\nocite{*} % Makes every ref appear despite not being cited
 \bibliographystyle{plain} % We choose the "plain" reference style
 \bibliography{refs} % Entries are in the refs.bib file
 \end{document}
