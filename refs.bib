@@ -24,6 +24,27 @@
   doi      = {10.1007/s11219-019-09477-y},
   url      = {https://doi.org/10.1007/s11219-019-09477-y}
 }
+@article{baumgartner2024aidriven,
+  author         = {Baumgartner, Nils and Iyenghar, Padma and Schoemaker, Timo and Pulvermüller, Elke},
+  title          = {AI-Driven Refactoring: A Pipeline for Identifying and Correcting Data Clumps in Git Repositories},
+  journal        = {Electronics},
+  volume         = {13},
+  year           = {2024},
+  number         = {9},
+  article-number = {1644},
+  url            = {https://www.mdpi.com/2079-9292/13/9/1644},
+  issn           = {2079-9292},
+  abstract       = {Data clumps, groups of variables that repeatedly appear together across different parts of a software system, are indicative of poor code structure and can lead to potential issues such as maintenance challenges, testing complexity, and scalability concerns, among others. Addressing this, our study introduces an innovative AI-driven pipeline specifically designed for the refactoring of data clumps in software repositories. This pipeline leverages the capabilities of Large Language Models (LLM), such as ChatGPT, to automate the detection and resolution of data clumps, thereby enhancing code quality and maintainability. In developing this pipeline, we have taken into consideration the new European Union (EU)-Artificial Intelligence (AI) Act, ensuring that our pipeline complies with the latest regulatory requirements and ethical standards for use of AI in software development by outsourcing decisions to a human in the loop. Preliminary experiments utilizing ChatGPT were conducted to validate the effectiveness and efficiency of our approach. These tests demonstrate promising results in identifying and refactoring data clumps, but also the challenges using LLMs.},
+  doi            = {10.3390/electronics13091644}
+}
+@incollection{bavota2013recommending,
+  title     = {Recommending refactoring operations in large software systems},
+  author    = {Bavota, Gabriele and De Lucia, Andrea and Marcus, Andrian and Oliveto, Rocco},
+  booktitle = {Recommendation Systems in Software Engineering},
+  pages     = {387--419},
+  year      = {2013},
+  publisher = {Springer}
+}
 @inproceedings{becker2023programming,
   author    = {Becker, Brett A. and Denny, Paul and Finnie-Ansley, James and Luxton-Reilly, Andrew and Prather, James and Santos, Eddie Antonio},
   title     = {Programming Is Hard - Or at Least It Used to Be: Educational Opportunities and Challenges of AI Code Generation},
@@ -41,8 +62,21 @@
   location  = {<conf-loc>, <city>Toronto ON</city>, <country>Canada</country>, </conf-loc>},
   series    = {SIGCSE 2023}
 }
-
-
+@article{biship2007pattern,
+  title   = {Pattern recognition and machine learning (information science and statistics)},
+  author  = {Biship, Christopher M},
+  journal = {Springer New York},
+  year    = {2007}
+}
+@article{breiman2001random,
+  title     = {Random forests},
+  author    = {Breiman, Leo},
+  journal   = {Machine learning},
+  volume    = {45},
+  pages     = {5--32},
+  year      = {2001},
+  publisher = {Springer}
+}
 @article{chinthapatla2024unleashing,
   title   = {Unleashing the Future: A Deep Dive into AI-Enhanced Productivity for Developers},
   author  = {Chinthapatla, Saikrishna},
@@ -52,6 +86,15 @@
   year    = {2024}
 }
 
+@article{cortes1995support,
+  title     = {Support-vector networks},
+  author    = {Cortes, Corinna and Vapnik, Vladimir},
+  journal   = {Machine learning},
+  volume    = {20},
+  pages     = {273--297},
+  year      = {1995},
+  publisher = {Springer}
+}
 @article{depalma2024exploring,
   title    = {Exploring ChatGPT's code refactoring capabilities: An empirical study},
   journal  = {Expert Systems with Applications},
@@ -64,7 +107,6 @@
   author   = {Kayla DePalma and Izabel Miminoshvili and Chiara Henselder and Kate Moss and Eman Abdullah AlOmar},
   abstract = {ChatGPT has shown great potential in the field of software engineering with its ability to generate code. Yet, ChatGPT’s ability to interpret code has been deemed unreliable and faulty, which causes concern for the platform’s ability to properly refactor code. To confront this concern, we carried out a study to assess ChatGPT’s abilities and limitations in refactoring code. We divided the study into three parts: if ChatGPT can refactor the code, if the refactored code preserves the behavior of the original code segments, and if ChatGPT is capable of providing documentation for the refactored code to provide insights into intent, instructions, and impact. We focused our research specifically on eight quality attributes to use when prompting ChatGPT to refactor our dataset of 40 Java code segments. After collecting the refactored code segments from ChatGPT, as well as data on whether the behavior was preserved, we ran the refactored code through PMD, a source code analyzer, to find programming flaws. We also tested ChatGPT’s accuracy in generating documentation for the refactored code and analyzed the difference between the results of each quality attribute. We conclude that ChatGPT can provide many useful refactoring changes that can improve the code quality which is crucial. ChatGPT offered improved versions of the provided code segments 39 out of 40 times even if it is as simple as suggesting clearer names for variables or better formatting. ChatGPT was able to recommend numerous options ranging from minor changes such as renaming methods and variables to major changes such as modifying the data structure. ChatGPT’s strengths and accuracy were in suggesting minor changes because it had difficulty addressing and understanding complex errors and operations. Although most of the changes were minor, they made significant improvements because converting loops, simplifying calculations, and removing redundant statements have a crucial effect on runtime, memory, and readability. However, our results also indicate how ChatGPT can be unpredictable in its responses which threatens the reliability of ChatGPT. Asking ChatGPT the same prompt often yields different results, so some outputs were more accurate than others. This makes it difficult to fully access ChatGPT’s capabilities due to its variation and inconsistency. Due to ChatGPT’s limitations of its reliance on its data set, it lacks understanding of the broader context so it may occasionally make errors and suggest alternations that are neither applicable nor necessary. Overall, ChatGPT has proved to be a beneficial tool for programming as it is capable of providing advantageous suggestions, even if it is on a small scale. However, human programmers are still needed to oversee these changes and determine their significance. ChatGPT should be used as an aid to programmers since we cannot completely depend on it yet.}
 }
-
 @book{fowler2018refactoring,
   title     = {Refactoring: Improving the Design of Existing Code},
   author    = {Fowler, M.},
@@ -74,22 +116,25 @@
   year      = {2018},
   publisher = {Pearson Education}
 }
-
-@incollection{bavota2013recommending,
-  title={Recommending refactoring operations in large software systems},
-  author={Bavota, Gabriele and De Lucia, Andrea and Marcus, Andrian and Oliveto, Rocco},
-  booktitle={Recommendation Systems in Software Engineering},
-  pages={387--419},
-  year={2013},
-  publisher={Springer}
+@book{goodfellow2016deep,
+  title     = {Deep learning},
+  author    = {Goodfellow, Ian and Bengio, Yoshua and Courville, Aaron},
+  year      = {2016},
+  publisher = {MIT press}
 }
-
 @inproceedings{imai2022github,
   title     = {Is github copilot a substitute for human pair-programming? an empirical study},
   author    = {Imai, Saki},
   booktitle = {Proceedings of the ACM/IEEE 44th International Conference on Software Engineering: Companion Proceedings},
   pages     = {319--321},
   year      = {2022}
+}
+@inproceedings{ishizue2024improved,
+  title     = {Improved Program Repair Methods using Refactoring with GPT Models},
+  author    = {Ishizue, Ryosuke and Sakamoto, Kazunori and Washizaki, Hironori and Fukazawa, Yoshiaki},
+  booktitle = {Proceedings of the 55th ACM Technical Symposium on Computer Science Education V. 1},
+  pages     = {569--575},
+  year      = {2024}
 }
 
 @article{issueInformation2023,
@@ -116,6 +161,17 @@
   publisher = {Wiley Online Library}
 }
 
+@inproceedings{kataoka2002refactoring,
+  author    = {Kataoka, Y. and Imai, T. and Andou, H. and Fukaya, T.},
+  booktitle = {International Conference on Software Maintenance, 2002. Proceedings.},
+  title     = {A quantitative evaluation of maintainability enhancement by refactoring},
+  year      = {2002},
+  volume    = {},
+  number    = {},
+  pages     = {576-585},
+  keywords  = {Software maintenance;Programming profession;Process planning;Maintenance engineering;Systems engineering and theory;Laboratories;Software design;Computer bugs;Performance analysis;Project management},
+  doi       = {10.1109/ICSM.2002.1167822}
+}
 @article{kruchten2012technical,
   title     = {Technical debt: From metaphor to theory and practice},
   author    = {Kruchten, Philippe and Nord, Robert L and Ozkaya, Ipek},
@@ -125,6 +181,17 @@
   pages     = {18--21},
   year      = {2012},
   publisher = {IEEE}
+}
+@inproceedings{leitch2003maintainability,
+  author    = {Leitch, R. and Stroulia, E.},
+  booktitle = {Proceedings. 5th International Workshop on Enterprise Networking and Computing in Healthcare Industry (IEEE Cat. No.03EX717)},
+  title     = {Assessing the maintainability benefits of design restructuring using dependency analysis},
+  year      = {2003},
+  volume    = {},
+  number    = {},
+  pages     = {309-322},
+  keywords  = {Costs;Predictive models;Investments;Software design;Regression analysis;Business;Software quality;Quality management;Project management;Software development management},
+  doi       = {10.1109/METRIC.2003.1232477}
 }
 
 @article{mariani2017systematic,
@@ -136,6 +203,34 @@
   year      = {2017},
   publisher = {Elsevier}
 }
+
+@inproceedings{meyer2024ai,
+  title     = {AI Engineering for Trust by Design},
+  author    = {Meyer-Vitali, Andr{\'e}},
+  booktitle = {Proceedings of the 12th International Conference on Model-Based Software and Systems Engineering-MBSE-AI Integration, Rome, Italy},
+  pages     = {21--23},
+  year      = {2024}
+}
+
+
+@book{quinlan2014c4,
+  title     = {C4. 5: programs for machine learning},
+  author    = {Quinlan, J Ross},
+  year      = {2014},
+  publisher = {Elsevier}
+}
+@article{sheneamer2020machinelearning,
+  author   = {Sheneamer, Abdullah M.},
+  journal  = {IEEE Access},
+  title    = {An Automatic Advisor for Refactoring Software Clones Based on Machine Learning},
+  year     = {2020},
+  volume   = {8},
+  number   = {},
+  pages    = {124978-124988},
+  keywords = {Cloning;Tools;Feature extraction;Software;Machine learning;Computer bugs;Object oriented modeling;Refactoring clone;machine learning;outlier detection;classification;AST and PDG features},
+  doi      = {10.1109/ACCESS.2020.3006178}
+}
+
 @inproceedings{tang2021empirical,
   title        = {An empirical study of refactorings and technical debt in machine learning systems},
   author       = {Tang, Yiming and Khatchadourian, Raffi and Bagherzadeh, Mehdi and Singh, Rhia and Stewart, Ajani and Raja, Anita},
@@ -144,10 +239,33 @@
   year         = {2021},
   organization = {IEEE}
 }
-
+@inproceedings{tsantalis2018accurate,
+  title     = {Accurate and efficient refactoring detection in commit history},
+  author    = {Tsantalis, Nikolaos and Mansouri, Matin and Eshkevari, Laleh M and Mazinanian, Davood and Dig, Danny},
+  booktitle = {Proceedings of the 40th international conference on software engineering},
+  pages     = {483--494},
+  year      = {2018}
+}
+@article{tsantalis2022refactoringminer,
+  author   = {Tsantalis, Nikolaos and Ketkar, Ameya and Dig, Danny},
+  journal  = {IEEE Transactions on Software Engineering},
+  title    = {RefactoringMiner 2.0},
+  year     = {2022},
+  volume   = {48},
+  number   = {3},
+  pages    = {930-950},
+  keywords = {Tools;Open source software;Software systems;Task analysis;Libraries;Syntactics;Maintenance engineering;Refactoring mining;refactoring oracle;precision;recall;execution time;git;commit},
+  doi      = {10.1109/TSE.2020.3007722}
+}
 @article{yeticstiren2023evaluating,
   title   = {Evaluating the code quality of ai-assisted code generation tools: An empirical study on github copilot, amazon codewhisperer, and chatgpt},
   author  = {Yeti{\c{s}}tiren, Burak and {"O}zsoy, I{\c{s}}{\i}k and Ayerdem, Miray and T{"u}z{"u}n, Eray},
   journal = {arXiv preprint arXiv:2304.10778},
   year    = {2023}
+}
+
+@misc{zhang2014optimality,
+  title  = {The Optimality of Na{\"\i}ve Bayes. FLAIRS2004 conference, 2014},
+  author = {Zhang, H},
+  year   = {2014}
 }
